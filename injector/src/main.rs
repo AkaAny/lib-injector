@@ -294,7 +294,7 @@ fn main() {
             println!("[parent] path address:0x{:x}", path_address);
             let shellcode_vec = shell_code::shellcode(local_pthread_create_from_mach_thread as mach_vm_address_t,
                                                       0, local_dlopen_addr as mach_vm_address_t,
-                                                      LIB_PATH);
+                                                      lib_path);
             let shellcode = shellcode_vec.as_slice();
             let shellcode_addr = mach_pt::allocate_and_write_data(handle,
                                                                   shellcode,
