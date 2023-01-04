@@ -2,3 +2,5 @@
 inject-lib/target
 injector/target
 test.dylib
+shellcode_processor/shellcode.o
+shellcode_processor/shellcode
